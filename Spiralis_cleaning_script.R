@@ -37,13 +37,12 @@ organized_data <- data_spiralis %>%
 #Check the grouped and organized data
 summary(organized_data)
 
-#Now we removed columns with NA values
 ##Check the data frame
-print(data_spiralis)
+print(organized_data)
 
 #Decide the file name and path
 file_path <- "C:\\Users\\hugom\\OneDrive\\Skrivbord\\Skolrelaterat\\BIO451\\cleaned_data.csv"
 
 #Write the dataframe to a CSV file 
-write.csv(data_spiralis, file = file_path, row.names = FALSE)
+write.csv(organized_data, file = file_path, row.names = FALSE)
 
