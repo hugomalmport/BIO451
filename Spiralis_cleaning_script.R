@@ -16,6 +16,7 @@ head(data_spiralis)
 str(data_spiralis)
 
 #Remove columns with NA values
+#Now we remove columns with NA values
 data_spiralis <- data_spiralis[, colSums(is.na(data_spiralis)) == 0]
 
 #Remove rows with NA values
