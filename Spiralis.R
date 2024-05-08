@@ -12,7 +12,7 @@ library(readxl)
 library(emmeans)
 
 # Read data from excel file
-spiralis_data <- read_excel("C:\\Users\\mats\\OneDrive - Crossaster\\MK\\Biologi\\Experimentell marinekologi\\Project Fucus zonation\\Dev\\Fucus Data.xlsx", sheet = "Data")
+spiralis_data <- read_excel("~/Downloads/Fucus Data.xlsx", sheet = "Data")
 
 # Make the salinity treatment a factor
 spiralis_data$salinity_treatment_psu <- as.factor(spiralis_data$salinity_treatment_psu)
